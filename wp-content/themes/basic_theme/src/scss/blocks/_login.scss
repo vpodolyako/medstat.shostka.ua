@@ -1,0 +1,26 @@
+.form-in{
+    position: relative;
+    padding-left: 12rem;
+    &::before{
+        content: '';
+        width: 1px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary;
+    }
+}
+
+.enter-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 9rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    a, button{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}

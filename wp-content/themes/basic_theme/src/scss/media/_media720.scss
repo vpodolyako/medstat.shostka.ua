@@ -1,0 +1,107 @@
+@media(max-width: 720px){
+
+    .calendar-filter-block{
+        display: none;
+    }
+    .calendar-column-lg{
+        border-top: none;
+        width: 100%;
+        .calendar-title-row{
+            display: none;
+        }
+        &::before{
+            top: 0;
+        }
+    }
+
+    .calendar-column-sm{
+        width: 100%;
+    }
+
+    .calendar-events-row{
+        border-left: 1px solid $border-color;
+    }
+    
+    .calendar-mob-filter{
+        display: flex;
+        .calendar-mob-filter-button{
+            position: relative;
+            width: 50%;
+            background-color: transparent;
+            display: block;
+            border: none;
+            padding: 2.5rem;
+            font-size: 1.4rem;
+            outline: none;
+            font-weight: 700;
+            &:first-child{
+                border-right: 2px solid $border-color;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                top: -1px;
+                left: -1px;
+                right: -1px;
+                bottom: -1px;
+            }
+            &.primary-filter-button.active{
+                color: $primary;
+                &::after{
+                    border: 2px solid $primary;
+                }
+            }
+            &.secondary-filter-button.active{
+                color: $secondary;
+                &::after{
+                    border: 2px solid $secondary;
+                }
+            }
+        }
+    }
+
+    .calendar-events-column{
+        &.hidden-events{
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0;
+        }
+    }
+
+    .slider-centered-controls{
+        display: block;
+    }
+
+    .slider-centered{
+        width: calc(100% - 10rem);
+    }
+
+    .slider-centered-item{
+        width: 100%!important;
+        left: 0;
+        right: 0;
+    }
+
+    .calendar-day{
+        .calendar-month-day{
+            &.has-primary-event::before{
+                left: calc(50% - 0.2rem);
+            }
+            &.has-secondary-event::after{
+                right: calc(50% - 0.2rem);
+            }
+            &.has-primary-event.has-secondary-event{
+                &::before{
+                    left: calc(50% - 0.6rem);
+                }
+                &::after{
+                    right: calc(50% - 0.6rem);
+                }
+            }
+        }
+    }
+
+    
+    
+}

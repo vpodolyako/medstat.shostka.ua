@@ -1,0 +1,48 @@
+@media(max-width: 1366px){
+    .calendar-event .calendar-event-main{
+        padding-left: 3rem;
+    }
+
+    .calendar-event .calendar-event-time{
+        font-size: 1.6rem;
+    }
+
+    .slider-centered-title{
+        font-size: 2rem;
+        height: 10.4rem;
+        max-height: 10.4rem;
+    }
+
+    .slider-centered-person .slider-centered-person-info .slider-centered-person-name{
+        font-size: 2rem;
+    }
+
+    .gallery-item-lg{
+        height: 50rem;
+    }
+
+    .gallery-item-sm{
+        height: 23rem;
+    }
+
+    .quote-in-row{
+        padding: 4rem 6rem;
+        .quote-title{
+            margin-bottom: 6rem;
+        }
+        .quote-inner::before{
+            top: -15rem;
+            left: -2rem;
+            width: 11rem;
+            height: 11rem;
+        }
+        .quote-person {
+            .quote-person-image{
+                margin-right: 2rem;
+            }
+            .quote-person-info{
+                width: calc(100% - 10rem);
+            }
+        }
+    }
+}

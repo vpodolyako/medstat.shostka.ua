@@ -1,0 +1,144 @@
+@media(max-width: 420px){
+    .calendar-column-lg{
+        &::before{
+            display: none;
+        }
+    }
+
+    .calendar-events-row{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .calendar-events-column{
+        width: calc(100% - 1rem);
+        margin-left: 0;
+    }
+
+    .calendar-event.event-empty .calendar-event-main{
+        margin-left: 0;
+    }
+
+    .calendar-event{
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+        .calendar-event-time, 
+        .calendar-event-main{
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &::before{
+            left: -1.1rem;
+        }
+    }
+
+    .section-slider-centered {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .slider-centered{
+        width: calc(100% - 5rem);
+    }
+
+    .slider-centered-controls .btn-arrow{
+        border: none;
+        width: 2rem;
+        .icon{
+            width: 2rem;
+            height: 2rem;
+        }
+        &.prev{
+            left: .5rem;
+        }
+        &.next{
+            right: .5rem;
+        }
+    }
+
+    .slider-centered-person .slider-centered-person-image{
+        margin-right: 1.5rem;
+    }
+
+    .slider-centered-person .slider-centered-person-info {
+        width: calc(100% - 8rem);
+    }
+
+    .notification{
+        width: calc(100% - 4rem);
+        min-height: 10rem;
+    }
+
+    .secondary-text{
+        font-size: 1.2rem;
+    }
+
+    .event-block{
+        .event-block-time{
+            font-size: 1.6rem;
+        }
+    }
+
+    .quote-in-row{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .quote-title{
+            margin-top: 2rem;
+        }
+        .quote-inner::before{
+            top: -9rem;
+        }
+    }
+
+    .section-title-lg.hide-image .people{
+        width: 100% ;
+    }
+
+    .section-title-lg.section-title .title-block{
+        padding-bottom: 25rem;
+    }
+
+    .section-title-lg .wrap-sm{
+        text-align: center;
+    }
+
+    .doughnut{
+        height: 250px!important;
+    }
+
+    .pagination-list .pagination-item.pagination-item-arrow a{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .pagination-list .pagination-item a{
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
+    .article-image{
+        margin-top: 2rem;
+    }
+
+    .article-author-block .article-author{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        .article-author-info{
+            width: 100%;
+            margin-left: 0;
+        }
+        img {
+            width: 8rem;
+        }
+        .text{
+            font-size: 1.4rem;
+        }
+        .article-author-title{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+@import "~normalize.css";
+@import '~slick-slider/slick/slick.css';
+@import "base/_variables";
+@import "base/_block";
+@import "base/_grid";
+@import "base/_main";
+
+
+@import "blocks/_header";
+@import "blocks/_page";
+@import "blocks/_login";
+@import "blocks/_typed-blocks";
+@import "blocks/_calendar";
+@import "blocks/_media_about";
+@import "blocks/_modal";
+@import "blocks/_report";
+@import "_custom";
+
+@import "media/_mediaH";
+@import "media/_media1800";
+@import "media/_media1600";
+@import "media/_media1440";
+@import "media/_media1366";
+@import "media/_media1280";
+@import "media/_media1200";
+@import "media/_media1080";
+@import "media/_media1024";
+@import "media/_media960";
+@import "media/_media820";
+@import "media/_media768";
+@import "media/_media720";
+@import "media/_media640";
+@import "media/_media480";
+@import "media/_media420";
+
+
+
+@import "special/_uikit";
+

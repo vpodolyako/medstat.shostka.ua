@@ -1,0 +1,148 @@
+@media(max-width: 960px){
+    .calendar-column-sm{
+        width: 34rem;
+    }
+    .calendar-column-lg{
+        width: calc(100% - 34rem);
+    }
+
+    .calendar-day .calendar-month-day.has-secondary-event.has-primary-event::before{
+        left: 1.1rem;
+    }
+
+    .calendar-day .calendar-month-day.has-secondary-event.has-primary-event::after{
+        right: 1.1rem;
+    }
+
+    .calendar-day .calendar-month-day.has-primary-event::before{
+        left: 1.5rem;
+    }
+
+    .calendar-day .calendar-month-day.has-secondary-event::after{
+        right: 1.5rem;
+    }
+
+    .calendar-event .calendar-event-main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .tag{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .full-screen .wrap{
+        height: 60rem;
+    }
+
+    .full-panel-small{
+        left: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        flex-direction: column;
+        .panel-side-left{
+            padding: 3rem;
+            min-width: 100%;
+            margin-bottom: -4rem;
+            & > img{
+                display: none;
+            }
+            .h2{
+                margin-top: 0;
+                max-width: 100%;
+            }
+        }
+        .panel-side-right{
+            margin-left: 0;
+            padding: 2rem;
+            .secondary-text{
+                min-height: auto;
+            }
+        }
+    }
+
+    .provider-section .h2{
+        max-width: 100%;
+    }
+
+    .section-anim-block{
+        .block-with-text{
+            margin-bottom: 5rem;
+        }
+    }
+    
+    .block-with-text .btn, .block-with-text .btn-secondary{
+        margin-top: 2rem;
+    }
+
+    .slider-centered-person .slider-centered-person-info .slider-centered-person-job{
+        max-width: 100%;
+    }
+
+    .slider-centered-title{
+        height: 15.6rem;
+        max-height: 15.6rem;
+    }
+
+    .section-slider-centered{
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .full-height-block{
+        padding: 2rem 3rem;
+        left: 2rem;
+        width: 50rem;
+        .lined-left {
+            margin-top: 3rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .lined-left span{
+            font-size: 4rem;
+        }
+        .logo {
+            bottom: 3rem;
+            left: 2rem;
+            max-width: 20rem;
+        }
+    }
+
+    .main-content{
+        padding: 2rem 3rem;
+    }
+
+    .wrap-content{
+        padding: 3rem;
+    }
+
+    .event-block{
+        padding: 3rem 4rem;
+    }
+
+    .section-report-subtitle .subtitle{
+        font-size: 2rem;
+    }
+
+    .news-block-row {
+        .news-block-mod{
+            width: 40rem!important;
+            padding-top: 60%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    .fd-column-reverse-lg{
+        &.ai-center{
+            align-items: flex-start;
+        }
+    }
+
+    .section-with-content-lists{
+        .block-with-text{
+            margin-bottom: 4rem;
+        }
+    }
+}

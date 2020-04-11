@@ -1,0 +1,374 @@
+.calendar-controls{
+    border: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    .btn-arrow{
+        border: none;
+        background-color: transparent;
+        padding: 1.7rem 2rem;
+        outline: none;
+        cursor: pointer;
+        &.prev{
+            padding-right: 1rem;
+        }
+        &.next{
+            padding-left: 1rem;
+        }
+        .icon{
+            width: 2rem;
+            height: 2rem;
+            fill: $dark;
+        }
+    }
+}
+
+.calendar-table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-column-sm{
+    border: 1px solid $border-color;
+    width: 52rem;
+}
+
+.calendar-title-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.6rem 4rem 4.6rem 4.8rem;
+    border-bottom: 1px solid $border-color;
+}
+
+.calendar-title{
+    .current-month, .current-weekday{
+        text-transform: capitalize;
+    }
+    .current-year{
+        margin-left: .5rem;
+    }
+    .current-year, .current-date{
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $dark-grey;
+    }
+}
+
+.calendar-column-lg{
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    width: calc(100% - 52rem);
+}
+
+.calendar{
+    padding: 3.3rem 2.8rem;
+    border-bottom: 1px solid $border-color;
+}
+
+.calendar-week,
+.calendar-day{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        width: calc(14.2857% - 1rem);
+        padding: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 1rem .5rem;
+        cursor: pointer; 
+        border-radius: 3rem;
+        z-index: 3;
+    }
+    .calendar-month-day{
+        position: relative;
+        &.has-primary-event{
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: .4rem;
+                height: .4rem;
+                background-color: $primary;
+                bottom: .1rem;
+                left: 2.6rem;
+            }
+        }
+        &.has-secondary-event{
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                width: .4rem;
+                height: .4rem;
+                background-color: $secondary;
+                bottom: .1rem;
+                right: 2.6rem;
+            }
+            &.has-primary-event{
+                &::before{
+                    left: 2.2rem;
+                }
+                &::after{
+                    right: 2.2rem;
+                }
+            }
+        }
+        &.today{
+            color: $primary;
+        }
+        &.choosed-date{
+            transition: all .2s ease-in-out;
+            color: #fff;
+            &.has-primary-event, &.has-secondary-event{
+                &::before, &::after{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.calendar-day-upper{
+    position: relative;
+    .current-date-label{
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 4rem;
+        top: 0;
+        bottom: 0;
+        border-radius: 5px;
+        background-color: $primary;
+    }
+}
+
+.calendar-week{
+    div{
+        color: $dark-grey;
+        font-weight: 600;
+    }
+}
+
+.calendar-day{
+    div{
+        color: #151719;
+        font-weight: 600;
+    }
+    .unactive{
+        color: rgba($dark-grey, .55);
+    }
+}
+
+.calendar-filter-block{
+    padding: 2rem 4.8rem 4rem;
+    .h3{
+        display: block;
+        margin-bottom: 4rem;
+    }
+    &:not(:last-child){
+        border-bottom: 1px solid $border-color;  
+    }
+    .label-radio{
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+        &.all{
+            .icon{
+                border-color: $secondary;
+                &::before{
+                    background-color: $primary;
+                }
+            }
+        }
+        &.primary{
+            .icon{
+                border-color: $primary;
+                &::before{
+                    background-color: $primary;
+                }
+            }
+        }
+        &.secondary{
+            .icon{
+                border-color: $secondary;
+                &::before{
+                    background-color: $secondary;
+                }
+            }
+        }
+        &.thin{
+            .icon{
+                border-width: 1px;
+            }
+            &::before{
+                width: .6rem;
+                height: .6rem;
+            }
+        }
+    }
+}
+
+
+.calendar-events-row{
+    padding: 0 3.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 15rem);
+    .calendar-events-column{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 4.5rem;
+        margin-bottom: 6rem;
+        width: calc(50% - 2rem);
+        height: 100%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -4.5rem;
+            bottom: -4.5rem;
+            left: 28%;
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: $border-color;
+        }
+    }
+}
+
+.calendar-event{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6rem;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 28%;
+        width: 2px;
+        height: 100%;
+        display: block;
+    }
+    .calendar-event-time{
+        width: 28%;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding-right: 1rem;
+    }
+    .calendar-event-main{
+        width: 72%;
+        padding-left: 5rem;
+        padding-right: 3rem;
+        .calendar-event-top{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .tag{
+            margin-right: 2rem;
+        }
+        .days-left{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: block;
+            font-size: 1.2rem;
+        }
+    }
+    .calendar-event-title{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $dark;
+        line-height: 1.35em;
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: -webkit-box;
+        height: 4.2rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+    }
+    &.primary-event{
+        &::before{
+            background-color: $primary;
+        }
+        .calendar-event-time{
+            color: $primary;
+        }
+        .calendar-event-title{
+            .desktop &{
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .tag{
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+    &.secondary-event{
+        &::before{
+            background-color: $secondary;
+        }
+        .calendar-event-time{
+            color: $secondary;
+        }
+        .calendar-event-title{
+            .desktop &{
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+        .tag{
+            background-color: $middle-blue;
+            color: $secondary;
+        }
+    }
+    &.event-empty{
+        &::before{
+            background: #da1f3d;
+            background: -moz-linear-gradient(top, #da1f3d 30%, #003c71 100%);
+            background: -webkit-linear-gradient(top, #da1f3d 30%,#003c71 100%); 
+            background: linear-gradient(to bottom, #da1f3d 30%,#003c71 100%); 
+        }
+        .calendar-event-main{
+            margin-left: 28%;
+        }
+        .calendar-event-title{
+            height: auto;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &.archive{
+        .calendar-event-title,
+        .calendar-event-time{
+            color: $dark-grey;
+        }
+        &::before, .tag{
+            background-color: $dark-grey;
+        }
+        .tag{
+            color: #fff;
+        }
+    }
+    &.hidden{
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.calendar-mob-filter{
+    display: none;
+}

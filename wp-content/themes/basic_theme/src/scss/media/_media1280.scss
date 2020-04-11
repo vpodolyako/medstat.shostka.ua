@@ -1,0 +1,178 @@
+@media(max-width: 1280px){
+    .user-info {
+        min-width: auto;
+        .icon{
+            margin-right: 3rem;
+        }
+        .name{
+            display: none;
+        }
+    }
+
+    .user-menu-inner .user-menu-list{
+        width: auto;
+        li{
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .header .social-links{
+        flex-wrap: wrap;
+        li{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            a{
+                .icon{
+                    width: 1.6rem;
+                    height: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .user-register-menu{
+        .btn, .btn-secondary{
+            padding: 0;
+            min-height: auto;
+            background-color: transparent!important;
+            justify-content: flex-start;
+            margin-bottom: 2rem;
+            &, span{
+                color: $dark;
+                font-size: 1.2rem;
+            }
+            .icon{
+                fill: $dark;
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+            .icon + span{
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .section-top-bottom{
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+    }
+
+    .lined-slider-controls{
+        top: -8rem;
+    }
+
+    .btn-slider{
+        .icon{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &.prev{
+            padding: 1.2rem 1rem 1.2rem 1.8rem;
+        }
+        &.next{
+            padding: 1.2rem 1.8rem 1.2rem 1rem;
+        }
+    }
+
+    .btn-arrow{
+        width: 3rem;
+        height: 3rem;
+        
+        .icon{
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    .calendar-controls {
+        .btn-arrow{
+            padding: .5rem 1rem;
+            .icon{
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            &.prev{
+                padding-right: .3rem;
+            }
+            &.next{
+                padding-left: .3rem;
+            }
+        }
+    }
+
+    .calendar-title .current-year, .calendar-title .current-date{
+        font-size: 2.2rem;
+        line-height: 1.375em;
+    }
+
+    .provider-item{
+        width: 10rem !important;
+        height: auto;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .slider-centered-person {
+        align-items: center;
+        .slider-centered-person-image {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 1.5rem;
+        }
+    }
+
+    .slider-centered-item{
+        padding: 5rem 5rem;
+    }
+
+    .slider-centered-item .slider-centered-item-inner::before{
+        top: -11rem;
+        left: -3rem;
+    }
+
+    .slider-centered{
+        width: 94%;
+    }
+
+    .slider-centered-title{
+        height: 13rem;
+        max-height: 13rem;
+    }
+
+    .full-height-block {
+        left: 6rem;
+    }
+
+    .special-border-left {
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+
+    .outline-block{
+        padding-right: 0;
+    }
+
+
+    .report-menu li{
+        a{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    .title-profile-block{
+        .person-card-xs, .title-description{
+            margin-left: 0;
+        }
+    }
+
+    .after-title-block{
+        padding: 2rem 4rem 5rem; 
+        .title-sm{
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

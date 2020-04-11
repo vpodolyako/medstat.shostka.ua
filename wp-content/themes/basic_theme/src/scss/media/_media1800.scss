@@ -1,0 +1,70 @@
+@media(max-width: 1800px){
+    .main-menu-nav .main-menu{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .user-row {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .user-register-menu{
+        left: 3rem;
+    }
+
+    .header .social-links{
+        left: 1rem;
+    }
+
+    .lang-choose{
+        width: 6rem;
+    }
+
+    .user-info .name{
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    .user-register-menu{
+        display: flex;
+        flex-direction: column;
+        .btn, .btn-secondary{
+            min-width: auto;
+        }
+    }
+
+    .main-menu-nav .main-menu li .submenu{
+        left: 3.5rem;
+    }
+
+    .user-menu-inner .user-menu-list{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .full-panel-small {
+        left: 4rem;
+        right: 4rem;
+        .panel-side-right .secondary-text{
+            min-height: 30rem;
+        }
+    }
+
+    .slider-centered-item{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .slider-centered-item .slider-centered-item-inner::before{
+        left: -10rem;
+    }
+
+    .report-nav{
+        right: 0;
+    }
+
+    .section-title-lg.hide-image .people{
+        right: 0;
+    }
+}

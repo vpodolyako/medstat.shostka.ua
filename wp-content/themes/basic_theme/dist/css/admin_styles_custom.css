@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.event_managment_body {
+  margin-bottom: 5px;
+}
+
+.panel {
+  display: none;
+}
+
+#event_managment table {
+  display: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+#event_managment .accordion {
+  background-color: #0073aa;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+#event_managment table td {
+  width: 10%;
+  padding: 10px 5px;
+}
+
+#event_managment thead td {
+  font-size: 16px;
+  color: #0073aa;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#event_managment tbody td {
+  text-align: center;
+  font-size: 16px;
+  color: #03334a;
+  font-weight: 500;
+  border: 1px solid #ccc;
+}
+
+#event_managment .accordion h2 {
+  margin: 0;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+#event_managment {
+  margin-right: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+#event_managment .active, .accordion:hover {
+  background-color: #07567b;
+}
+
+#event_managment button:hover {
+  border-color: #008ec2;
+  background: #00a0d2;
+  color: #fff;
+}
+
+#event_managment button {
+  background: #26a748;
+  margin-left: 4px;
+  padding: 4px 8px;
+  position: relative;
+  top: -3px;
+  text-decoration: none;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #f7f7f7;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: normal;
+  color: #0073aa;
+  cursor: pointer;
+}
+
+#event_managment .search_submit {
+  background: #26a748;
+  margin-left: 4px;
+  padding: 4px 8px;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #f7f7f7;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: normal;
+  color: #0073aa;
+  cursor: pointer;
+}
+
+#event_managment h1, h2 {
+  color: #1773aa;
+  font-weight: 400;
+}
+
+#event_managment .accordion h2:after {
+  content: "+";
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#event_managment .active h2:after {
+  content: "\2212";
+}

@@ -1,0 +1,53 @@
+@media(max-height: 860px){
+    .main-menu-square, .user-menu-inner{
+        min-height: 63rem;
+    }
+
+    .current-main-menu{
+        margin-top: 16rem;
+        font-size: 2.8rem;
+        &::before{
+            width: 4.5rem;
+            height: 4.5rem;
+            background-size: 1.8rem 1.8rem;
+            top: -1.8rem;
+        }
+        &::after{
+            bottom: -2.5rem;
+        }
+    }
+
+    .main-menu-nav .main-menu li .submenu{
+        margin-top: 16rem;
+        li{
+            a{
+                padding-top: .6rem;
+                padding-bottom: .6rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .search-menu{
+        top: 52rem;
+    }
+
+    .header .social-links{
+        top: 55rem;
+    }
+
+    .user-register-menu{
+        top: 13rem;
+    }
+
+    .user-menu-inner .user-menu-list li a{
+        .icon{
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-right: 1rem;
+        }
+        .text{
+            font-size: 1.3rem;
+        }
+    }
+}

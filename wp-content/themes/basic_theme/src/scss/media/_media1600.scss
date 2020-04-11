@@ -1,0 +1,90 @@
+@media(max-width: 1600px){
+    .logo{
+        img{
+            height: 5rem;
+        }
+    }
+
+    .user-info{
+        min-width: 18rem;
+    }
+
+    .user-info .name{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: calc(100% - 8rem);
+    }
+
+    .main-menu-nav .main-menu li a{
+        padding: 1.5rem;
+    }
+
+    .main-menu-nav .main-menu li .submenu{
+        left: 4.5rem;
+    }
+
+    .slider-centered-item{
+        padding: 6rem 8rem;
+    }
+
+    .slider-centered-item .slider-centered-item-inner::before{
+        top: -12rem;
+        left: -6rem;
+    }
+
+    .section-outine-blocks{
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    .outline-block{
+        margin-top: 1rem;
+    }
+
+    .small-carousel-container{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .btn-control{
+            width: 4rem;
+            height: 4rem;
+            .icon{
+                width: 2rem;
+                height: 2rem;
+            }
+            &.prev{
+                left: 2rem;
+            }
+            &.next{
+                right: 2rem;
+            }
+        }
+    }
+
+    .small-carousel{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .small-carousel-image{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 15rem;
+    }
+
+    .main-content{
+        padding: 6rem;
+    }
+
+    .wrap-content {
+        padding: 7rem 6rem;
+    }
+
+    .report-menu li{
+        margin-left: 0;
+        margin-right: 0;
+        a{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+}
