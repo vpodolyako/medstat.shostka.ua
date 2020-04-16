@@ -9,9 +9,13 @@
     <link href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <?php wp_head(); ?>
+    
+
 </head>
 
 <body>
+    <div class="logo">
+        <img src="img/Penguins.jpeg"> 
  
         <div class="header">
             <h1>Відділ аналізу медичної статистики Шосткинського району</h1>
@@ -33,5 +37,3 @@
         
 
 
-</body>
-</html>
