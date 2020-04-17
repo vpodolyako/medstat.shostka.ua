@@ -13,69 +13,87 @@
        .logo img {
            
            border: 1px solid indigo;
-           max-width: 100%;
+           width: 1700px;
            height: auto;
            float: left;
-           margin: 5px;
-           vertical-align:bottom;
-           
-           
+               
        } 
+
        .nazva h1 {
            font-size: 50px;
            color: #600473;
            font-weight: bold;
            border: 1px solid indigo;
-           width: 100%;
-           height: 50px;
            position: relative;
-           left: 70px;
+           width: 1000px;
+           height: 150px;
+           left: 150px;
+           margin: 0 45px 0 0;
+           
+           float: right;
+           
            top: 20px;
            display: inline-block;
-           float: left;
-           margin: 0 auto;
+
+           text-align: center;
            
        }
+       
        .phone, .email {
-           display: inline;
+           margin-left: auto;
+           margin-right: auto;
+           display: table-cell;
+           vertical-align: middle;
+
            font-size: 20px;
            color: black;
            border: 1px solid indigo;
-           width: 100%;
-           height: 50px;
-           float: left;
-           clear: left;
-          
-       } 
-       
-       .head_menu {
-           list-style: none;
-           margin: 0;
-           padding-left: 0;
-           
-           
-       }
-       .head_menu li {
-           display: inline;
-           margin-right: -5px;
-           border: 1px solid indigo;
-           width: 150px;
+           width: 400px;
            height: 40px;
-           top:50px;
-           
+           position: relative;
+           margin: 0;
+           position: absolute;
+           top: 70%;
+           transform: translate(0, -50%);
+           text-align: center;
+           font-weight: bold;
+           left: 500px;   
+       } 
+
+       .email {
+          top:85%; 
+       }
+       
+       #head_menu {
+           margin: 0;
+           padding: 0;
+           list-style-type: none;
+           width: 100%;
            
            
        }
-       .head_menu a {
+      
+       #head_menu a {
            font-family: sans-serif;
            text-decoration: none;
            color: #5757a0;
            font-weight: bold;
            display: inline-block;
-           padding: 10px 20px;
+           padding: 5px;
            background-color: lavender;
            border-bottom: 5px solid #600473;
+           width: 100%;
+
        }
+       #head_menu li {
+           display: inline;
+           margin-right: -5px;
+           border: 1px solid indigo;
+
+           height: 40px;
+           top:300px;   
+       }
+       
        
          
     </style>
@@ -87,8 +105,11 @@
         <div class="header">
 
         <div class="logo">
-             <img src="<?php bloginfo('template_directory');?>/img/emblema.jpg"> 
+             <img src="<?php bloginfo('template_directory');?>/img/emblemaa.jpg"> 
         </div>
+
+        
+
         <span class="nazva"> 
             <h1>Відділ аналізу медичної статистики Шосткинського району</h1>
         </span>
@@ -96,15 +117,17 @@
         <div class="email">&#9993;shostkarcpmsd2018@ukr.net</div>
 
          
-         <ul class="head_menu">
+         <ul id="head_menu">
          
-              <li><a href="#">Головна</a></li>
-              <li><a href="#">Новини</a></li>
-              <li><a href="#">Аналіз роботи</a></li>
-              <li><a href="#">Документи</a></li>
-              <li><a href="#">Мережа</a></li>
-              <li><a href="#">Контакти</a></li>
+              <li><a href="#">ГОЛОВНА</a></li>
+              <li><a href="#">НОВИНИ</a></li>
+              <li><a href="#">АНАЛІЗ РОБОТИ</a></li>
+              <li><a href="#">ДОКУМЕНТИ</a></li>
+              <li><a href="#">МЕРЕЖА</a></li>
+              <li><a href="#">КОНТАКТИ</a></li>
         </ul>
+
+        
         </div>
     
         
