@@ -5,22 +5,17 @@
 global $userInfo, $options_fields, $userId, $cur_lang;
 
 //includes
-include(get_template_directory() . '/includes/front/enqueue.php');
-include(get_template_directory() . '/includes/ednpoints.php');
-include(get_template_directory() . '/includes/admin/admin.php');
+include(get_template_directory() . '/includes/enqueue.php');
+include(get_template_directory() . '/includes/endpoints.php');
 include(get_template_directory() . '/includes/setup.php');
-include(get_template_directory() . '/includes/strings_translation.php');
-include(get_template_directory() . '/includes/events_function.php');
 include(get_template_directory() . '/includes/additional_func.php');
 include(get_template_directory() . '/includes/post_type_and_tax.php');
-include(get_template_directory() . '/includes/walker.php');
 
 
 
 require_once ABSPATH . 'wp-admin/includes/image.php';
 require_once ABSPATH . 'wp-admin/includes/file.php';
 require_once ABSPATH . 'wp-admin/includes/media.php';
-
 //hooks
 
 //scripts and style
