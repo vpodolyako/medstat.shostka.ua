@@ -18,7 +18,7 @@
         <div class="header">
 
             <div class="logo">
-                <img src="<?php bloginfo('template_directory');?>/img/emblemaa.jpg"> 
+                <img src="<?php bloginfo('template_directory');?>/img/emblema.jpg"> 
             </div>
 
             <div class="main-header">

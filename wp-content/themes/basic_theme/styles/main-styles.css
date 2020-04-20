@@ -75,6 +75,13 @@
     justify-content: space-around;
 }
 
+.main_content_body {
+     display: block;
+     background: url(img/logo.jpg)
+}
+
+
+
 /* #head_menu li {
     display: inline;
     margin-right: -5px;
