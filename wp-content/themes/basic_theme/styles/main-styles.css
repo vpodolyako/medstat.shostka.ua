@@ -77,7 +77,7 @@
 
 .main_content_body {
      display: block;
-     background: url(img/logo.jpg)
+     background: url("../img/logo.jpg");
 }
 
 
