@@ -1,14 +1,17 @@
 <?php
 /* 
-	Template Name: About us
+	Template Name: News
 	*/
 get_header();
 ?>
 
 <main class="main">
+
+&#129440;Coronavirus
+	 
 </main>
 
-<?php get_template_part('inc/modal-video'); ?>
+
 
 <?php
 get_footer();
