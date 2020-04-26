@@ -9,21 +9,10 @@ get_header();
 
     <div class="doc">
 
-		<div class="moz">
-		 МОЗ України
-		</div>
-
-		<div class="zak">
-		Закони України
-		</div>
-
-		<div class="ukaz">
-		Укази Президента
-		</div>
-
-		<div class="post">
-		Постанови КМ
-		</div>
+		<h3> <p>МОЗ України</p>
+    <hr> <p>Закони України</p>
+    <hr> <p>Укази Президента</p>
+    <hr> <p>Постанови КМ</p> </h3>
 	
 	 </div>
 		 

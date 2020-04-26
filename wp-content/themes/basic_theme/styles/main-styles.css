@@ -21,7 +21,7 @@
 
 .nazva h1 {
     font-size: 50px;
-    color: #4B0082;
+    color: #1144AA;
     font-weight: bold;
     border: 1px solid indigo;
     position: relative;
@@ -60,12 +60,12 @@
 #head_menu a {
     font-family: sans-serif;
     text-decoration: none;
-    color: #5757a0;
+    color: #1D766F;
     font-weight: bold;
     display: inline-block;
     padding: 5px;
     background-color: lavender;
-    border-bottom: 5px solid #600473;
+    border-bottom: 5px solid #1144AA;
     width: 100%;
 }
 
@@ -83,16 +83,99 @@
 
 .main_content_body h3{
     font-size: 30px;
-    color: #00008B;
+    color: #392E85;
     font-weight: bold;
     
 }
 .main_content_body h4{
     font-size: 20px;
     color: black;
+    font-weight: bold;    
+}
+
+.contacts h3{
+    font-size: 25px;
+    color: black;
     font-weight: bold;
+}
+
+#zagol{
+    font-size: 21px;
+    color: #1D766F;
+    font-weight: bold;
+}
+
+.contacts span{
+    font-size: 17px;
+    color:black;
+    font-weight: bold;
+}
+
+.cont_adress{
+    float: right;
+    text-align: left;  
+}
+
+.cont_adress hr{
+    height: 12px;
+border: 0;
+box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
+}
+
+table {
+    width: 100%; 
+   }
+
+.pidroz caption{
+    font-weight: bold;
+    font-size: 17px;
      
 }
+
+   th{
+    background-color: rgba(0, 102, 94, 0.4);
+   }
+
+   .zagl{
+    background-color: rgba(128, 128, 128, 0.4); 
+    color: #1144AA;
+   }
+
+   td{
+    background-color: rgba(29, 118, 111, 0.2);
+   }
+
+   .doc p{
+    color: #1D766F;
+    font-weight: bold;
+    margin-left: 10px; 
+   }
+
+   .doc hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
+   }
+
+   .god{
+    color: #1D766F;
+    font-weight: bold;
+    margin-left: 10px;
+   }
+
+   .main hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
+   }
+
+   .god h3{
+    color: #1144AA;
+   }
+   
+
+
+
 
 
 
