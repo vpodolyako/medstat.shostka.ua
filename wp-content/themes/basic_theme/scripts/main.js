@@ -29,7 +29,7 @@ jQuery( document ).ready(function() {
         },
         data : {
             datasets: [{
-                data: [30, 50, 20],
+                data: [8100, 4000, 1000],
                 fill: true,
                 backgroundColor: [
                     '#EE3030',
