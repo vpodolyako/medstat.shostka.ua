@@ -34,6 +34,8 @@
         </div>
 
         <div class="menu">
+            <?php wp_nav_menu('Menu 1'); ?>
+<!-- 
             <ul id="head_menu">
                 <li><a href="#">ГОЛОВНА</a></li>
                 <li><a href="#">НОВИНИ</a></li>
@@ -41,7 +43,7 @@
                 <li><a href="#">ДОКУМЕНТИ</a></li>
                 <li><a href="#">МЕРЕЖА</a></li>
                 <li><a href="#">КОНТАКТИ</a></li>
-            </ul>
+            </ul> -->
         </div>
     
         

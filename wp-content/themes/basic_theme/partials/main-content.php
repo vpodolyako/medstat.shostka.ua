@@ -1,5 +1,11 @@
+<canvas id="myChart"></canvas>
 
- <div class="main_content_body">
+<div class="chart_body">
+    
+</div>
+
+
+<div class="main_content_body">
 
 <h3>ОСНОВНІ ЗАВДАННЯ ВІДДІЛУ:</h3>
 <h4>&#10004;Прийом і формування зведених звітів від структурних підрозділів Центру</h4>

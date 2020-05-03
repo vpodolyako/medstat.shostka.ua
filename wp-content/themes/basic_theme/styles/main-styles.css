@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-#head_menu{
+.menu ul{
     background-color: lavender;
     display: flex;
     justify-content: space-around;
@@ -50,14 +50,14 @@
    top:85%; 
 }
 
-#head_menu {
+.menu ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     width: 100%;
 }
 
-#head_menu a {
+.menu ul a {
     font-family: sans-serif;
     text-decoration: none;
     color: #1D766F;
