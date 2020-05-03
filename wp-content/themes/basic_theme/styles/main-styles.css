@@ -3,9 +3,10 @@
 }
 
 .logo img {
-    border: 1px solid indigo;
+    margin-left: 40px;
+    
     height: auto;
-    width: 300px;
+    width: 210px;
 } 
 
 .menu ul{
@@ -20,35 +21,43 @@
 }
 
 .nazva h1 {
-    font-size: 50px;
-    color: #1144AA;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-style: HELVETICA;
+    margin-left: 20px;
+    font-size: 40px;
+    color: indigo;
     font-weight: bold;
-    border: 1px solid indigo;
     position: relative;
     display: inline-block;
     text-align: center;
-    
 }
 
-.phone, .email {
-    margin-left: auto;
-    margin-right: auto;
-    display: table-cell;
-    vertical-align: middle;
-
-    font-size: 20px;
-    color: black;
-    border: 1px solid indigo;
-    position: relative;
-    margin: 0;
-    transform: translate(0, -50%);
+.nazva h3 {
+    font-style: system-ui;
+    margin-left: 20px;
+    color: rgb(36, 83, 177);
+    font-weight: bold;
     text-align: center;
-    font-weight: bold;  
+}
+.contacts_part {
+    float: right;
+    margin-left: 170px;
+    margin-top: 30px;
+
 } 
 
-.email {
-   top:85%; 
-}
+
+.contacts_part span {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-style: system-ui; 
+    
+    
+} 
+
+
 
 #head_menu {
     margin: 0;
@@ -65,7 +74,7 @@
     display: inline-block;
     padding: 5px;
     background-color: lavender;
-    border-bottom: 5px solid #1144AA;
+    border-bottom: 5px solid rgb(36, 83, 177);
     width: 100%;
 }
 

@@ -23,14 +23,17 @@
 
             <div class="main-header">
                 <span class="nazva"> 
-                    <h1>Відділ аналізу медичної статистики Шосткинського району</h1>
+                    <h1>МЕДСТАТ</h1>
+                     <p><h3>ШОСТКИНСЬКИЙ ВІДДІЛ АНАЛІЗУ МЕДИЧНОЇ СТАТИСТИКИ</h3></p>
                 </span>
-
-                <div class="contacts_part">
-                    <div class="phone">&#128222;(05449) 76 4 35</div>
-                    <div class="email">&#9993;shostkarcpmsd2018@ukr.net</div>
-                </div>
             </div>
+
+            <div class="contacts_part">
+                     <span>&#128222; (05449) 76 4 35 <span>
+                     <p><span> &#9993; shostkarcpmsd2018@ukr.net</span></p>
+                     <p><span> &#9203; пн-пт: з 8:00 по 16:00</span></p>
+                    
+                </div>
         </div>
 
         <div class="menu">
