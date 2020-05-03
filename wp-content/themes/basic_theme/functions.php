@@ -20,8 +20,6 @@ require_once ABSPATH . 'wp-admin/includes/media.php';
 
 //scripts and style
 add_action('wp_enqueue_scripts', 'theme_styles_and_scripts');
-//scripts and style for admin
-add_action('admin_enqueue_scripts', 'admin_styles_and_scripts', 100);
 //post type and tax
 add_action('init', 'register_post_types');
 //themes settings
