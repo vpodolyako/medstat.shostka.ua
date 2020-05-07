@@ -1,6 +1,7 @@
-<canvas id="myChart"></canvas>
+
 
 <div class="chart_body">
+<canvas id="levelChart" width="300" height="100"></canvas>
     
 </div>
 

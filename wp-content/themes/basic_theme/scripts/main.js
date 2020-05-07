@@ -1,49 +1,58 @@
 jQuery( document ).ready(function() {
-    var ctx = document.getElementById('myChart').getContext('2d');
 
-    // var myPieChart = new Chart(ctx, {
-    //     type: 'pie',
-    //     data: data,
-    //     options: options,
-    //     data = {
-    //         datasets: [{
-    //             data: [10, 20, 30]
-    //         }],
-        
-    //         // These labels appear in the legend and in the tooltips when hovering different arcs
-    //         labels: [
-    //             'Red',
-    //             'Yellow',
-    //             'Blue'
-    //         ]
-    //     },
-    // });
+    var levelCanvas = document.getElementById("levelChart");
 
-    var chart = new Chart(ctx, {
-        type: 'pie',
-        options: {
-            title: {
-                display: true,
-                text: 'Графік захворювання на COVID-19'
-            }
-        },
-        data : {
-            datasets: [{
-                data: [8100, 4000, 1000],
-                fill: true,
-                backgroundColor: [
-                    '#EE3030',
-                    '#30EE7A',
-                    '#4A4759'],
-            }],
-            // These labels appear in the legend and in the tooltips when hovering different arcs
-            labels: [
-                'Захворіли',
-                'Одужали',
-                'Померли'
-            ]
-        },
+    Chart.defaults.global.defaultFontFamily = "Lato";
+    Chart.defaults.global.defaultFontSize = 16;
+    
+    var levelData = {
+      label: 'РІВЕНЬ ЗАХВОРЮВАНОСТІ ЗА 2019 РІК',
+      data: [5427, 5243, 5514, 3933, 1326, 687, 1271],
+      backgroundColor: [
+        'rgba(0, 99, 132, 0.6)',
+        'rgba(30, 99, 132, 0.6)',
+        'rgba(60, 99, 132, 0.6)',
+        'rgba(90, 99, 132, 0.6)',
+        'rgba(120, 99, 132, 0.6)',
+        'rgba(150, 99, 132, 0.6)',
+        'rgba(180, 99, 132, 0.6)',
+        'rgba(210, 99, 132, 0.6)',
+        'rgba(240, 99, 132, 0.6)'
+      ],
+      borderColor: [
+        'rgba(0, 99, 132, 1)',
+        'rgba(30, 99, 132, 1)',
+        'rgba(60, 99, 132, 1)',
+        'rgba(90, 99, 132, 1)',
+        'rgba(120, 99, 132, 1)',
+        'rgba(150, 99, 132, 1)',
+        'rgba(180, 99, 132, 1)',
+        'rgba(210, 99, 132, 1)',
+        'rgba(240, 99, 132, 1)'
+      ],
+      borderWidth: 1.5,
+      hoverBorderWidth: 0
+    };
+    
+    var chartOptions = {
+      scales: {
+        yAxes: [{
+          barPercentage: 0.5
+        }]
+      },
+      elements: {
+        rectangle: {
+          borderSkipped: 'left',
+        }
+      }
+    };
+    
+    var barChart = new Chart(levelCanvas, {
+      type: 'horizontalBar',
+      data: {
+        labels: ["Хв. системи кровообігу", "Хв. сечостатевої системи", "Хв.органів травлення", "Хв. кістково-м'язової с-ми", "Новоутворення", "Хв. шкіри", "Хв. ендокринної с-ми"],
+        datasets: [levelData],
+      },
+      options: chartOptions
     });
-  });
-
-
+});
