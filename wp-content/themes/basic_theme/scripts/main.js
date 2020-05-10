@@ -1,6 +1,9 @@
 jQuery( document ).ready(function() {
 
     var levelCanvas = document.getElementById("levelChart");
+    var levelCanvas2 = document.getElementById("levelChart1"); 
+    var levelCanvas3 = document.getElementById("levelChart2"); 
+
 
     Chart.defaults.global.defaultFontFamily = "Lato";
     Chart.defaults.global.defaultFontSize = 16;
@@ -47,12 +50,36 @@ jQuery( document ).ready(function() {
       }
     };
     
-    var barChart = new Chart(levelCanvas, {
+    var barChart = new Chart(levelCanvas2, {
       type: 'horizontalBar',
       data: {
         labels: ["Хв. системи кровообігу", "Хв. сечостатевої системи", "Хв.органів травлення", "Хв. кістково-м'язової с-ми", "Новоутворення", "Хв. шкіри", "Хв. ендокринної с-ми"],
         datasets: [levelData],
       },
       options: chartOptions
+    });
+
+    var barChart2 = new Chart(levelCanvas3, {
+      type: 'horizontalBar',
+      data: {
+        labels: ["Хв. системи кровообігу", "Хв. сечостатевої системи", "Хв.органів травлення", "Хв. кістково-м'язової с-ми", "Новоутворення", "Хв. шкіри", "Хв. ендокринної с-ми"],
+        datasets: [levelData],
+      },
+      options: chartOptions
+    });
+
+    var barChart3 = new Chart(levelCanvas, {
+      type: 'horizontalBar',
+      data: {
+        labels: ["Хв. системи кровообігу", "Хв. сечостатевої системи", "Хв.органів травлення", "Хв. кістково-м'язової с-ми", "Новоутворення", "Хв. шкіри", "Хв. ендокринної с-ми"],
+        datasets: [levelData],
+      },
+      options: chartOptions
+    });
+
+    jQuery(".owl-carousel").owlCarousel({
+      items:1,
+      loop:true,
+      autoplay:true
     });
 });
