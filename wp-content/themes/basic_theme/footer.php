@@ -9,7 +9,7 @@ global $options_fields;
         </div>
 
         <div class="right_foot_part">
-            <a href="https://www.facebook.com/profile.php?id=100035202308845"><img src= "<?php bloginfo('template_directory');?>/img/facebook.png"/></a>
+            <a href="https://www.facebook.com/profile.php?id=100035202308845" target="_blank"><img src= "<?php bloginfo('template_directory');?>/img/facebook.png"/></a>
         </div>
     </div>
 </footer>
