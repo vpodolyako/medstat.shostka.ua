@@ -29,8 +29,8 @@ body{
 .footer .wrap{
     display: flex;
     justify-content: space-between;
-    padding: 5px;
-    background: rgba(59, 45, 64, 0.6);
+    padding: 0 0 0 5px;
+    background: rgba(59, 45, 64, 0.4);
     color: #325180;
     font-style:oblique;
     font-size: 16px;
@@ -40,12 +40,13 @@ body{
 .right_foot_part img{
     width: 50px;
     height: 50px;
-    margin-top: 5px;
+   }
+
+   .left_foot_part{
+       margin-top: 5px;
    }
    
-   .left_foot_part{
-       margin-top: 15px;
-   }
+   
 
 .footer .wrap a,.footer .wrap a:visited{
     color: #d9ebf7;
