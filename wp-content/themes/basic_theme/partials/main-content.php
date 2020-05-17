@@ -3,8 +3,7 @@
 <div class="chart_body">
     <div class="owl-carousel">
         <div> <canvas id="levelChart" width="200" height="50"></canvas></div>
-        <div> <canvas id="levelChart1" width="200" height="50"></canvas> </div>
-        
+        <div> <canvas id="levelChart1" width="200" height="50"></canvas> </div> 
     </div>
     
 </div>
