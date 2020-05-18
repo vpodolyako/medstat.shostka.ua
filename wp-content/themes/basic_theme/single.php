@@ -1,20 +1,16 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$post = get_post();
+?>
 
 <main class="main">
-    <section class="section">
-        <div class="wrap">
-            <?php get_template_part('inc/breadcrumbs', 'single'); ?>
-        </div>
-    </section>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php
-    while (have_posts()) :
-        the_post();
-        get_template_part('partials/news_content', 'single');
-    endwhile;
-    ?>
-
-    <?php get_template_part('inc/provider', 'single'); ?>
+        <section class="section page-section post_body">
+            <h1 class="post_title"> <?php the_title()?> </h1>
+            <?php echo($post->post_content); ?>
+        </section>
+    </article>
 </main>
 
 <?php get_footer(); ?>
