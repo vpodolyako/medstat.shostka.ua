@@ -17,28 +17,20 @@ get_header();
 			<div class=cont_adress>
 			<hr> <p id=zagol>Поштова адреса</p>
 				<span>&#8962;вул. Н.-Сіверська, 33, Сумська обл., Шосткинський р-н, смт Вороніж, 41140</span>
-			<hr>
-			
-		
-			<p id="zagol">E-mail</p> 
-			<span>&#9993;shostkarcpmsd2018@ukr.net</span>
-			<hr>
-
-			
-			<p id="zagol">Сайт закладу</p>
-			<span>&#127759;https://shostka-rc.pmsd.org.ua</span>
-			<hr>
-
-			
-			<p id="zagol">Телефон</p>
-			<span>&#128222;(05449) 76435<span>
+				
+            <hr> <p id="zagol">E-mail</p> 
+			    <span>&#9993;shostkarcpmsd2018@ukr.net</span>
+						
+			<hr> <p id="zagol">Сайт закладу</p>
+			    <span>&#127759;https://shostka-rc.pmsd.org.ua</span>
+						
+			<hr> <p id="zagol">Телефон</p>
+			   <span>&#128222;(05449) 76435<span>
 			<hr>
 		 </div>
 	 </div>
  
 </main>
-
-
 
 <?php
 get_footer();

@@ -7,9 +7,7 @@ get_header();
 
 <main class="main news_page">
 
-	<h1>Останні новини статистики</h1>
-
-	<div class="news_body">
+	<hr><div class="news_body">
 		<div class="news_list">
 			<?php 
 
