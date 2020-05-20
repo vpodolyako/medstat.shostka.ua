@@ -5,8 +5,7 @@
 get_header();
 ?>
 
-<main class="main">
-<hr> 		
+<main class="main">		
 		<!-- <div class="god"> 		
 			<h3>ЗВІТ ЗА 2019 РІК</h3> -->
 				<!-- <p>Амбулаторно-поліклінічні показники</p>
@@ -31,7 +30,6 @@ get_header();
         <hr><p>Постанови КМ</p>  -->
 
       </div>
-<hr> 
 		 
 </main>
 
