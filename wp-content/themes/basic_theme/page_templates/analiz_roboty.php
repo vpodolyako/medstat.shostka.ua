@@ -3,6 +3,51 @@
 	Template Name: Analis_roboty
 	*/
 get_header();
+
+$blanks = get_posts( array(
+	'order'       => 'DESC',
+	'post_type'   => 'blanks',
+));
+
+echo("Blanks:");
+print_r($blanks);
+
+$all_blanks = count($blanks);
+
+$blank_one_fields =  get_fields($blanks[0]->ID);
+
+echo("Fields:");
+print_r($blank_one_fields);
+print_r($blank_one_fields['sex']);
+
+$man_patients = 0;
+$first_patients = 0;
+$first_man_patients = 0;
+$oblik_patients = 0;
+
+for ($i=0; $i <$all_blanks ; $i++) { 
+	$blank_one_fields =  get_fields($blanks[$i]->ID);
+	$patient_sex = $blank_one_fields['sex'];
+	$patient_first = $blank_one_fields['first'][0];
+	$patient_oblik = $blank_one_fields['oblik'][0];
+
+	if($patient_sex == 'man'){
+		$man_patients++;
+	}
+
+	if($patient_first == 'first'){
+		$first_patients++;
+	}
+
+	if($patient_sex == 'man' && $patient_first == 'first'){
+		$first_man_patients++;
+	}
+
+	if($patient_oblik == 'oblik'){
+		$oblik_patients++;
+	}
+}
+
 ?>
 
 <main class="main">
@@ -22,12 +67,15 @@ get_header();
 
   <tr>
     <th> Усі хвороби  А00-Т98</th>
-	<th> </th>
-	<th> </th>
-	<th> </th>
-	<th> </th>
-	<th> </th>
+	<th> <?= $all_blanks ?> </th>
+	<th> <?= $man_patients ?> </th>
+	<th> <?= $first_patients ?> </th>
+	<th> <?= $first_man_patients ?> </th>
+	<th> <?= $oblik_patients ?> </th>
    </tr>
+
+
+
 
    <tr>
     <td>Новоутворення С00-D48</td>
