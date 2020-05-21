@@ -10,8 +10,87 @@
     margin-top: 230px;
 }
 
+.news_body{
+    display: flex;
+    width: 90%;
+}
+
+.post_title {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #1144aa;
+    font-weight: bold;
+}
+
+.post_body{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.post_title{
+    text-align: center;
+    font-size: 24;
+}
+
+.news_page img{
+    width: 100%;
+}
+
+.description_part{
+    width: 50%;
+    padding: 40px;
+}
+
+.description_part a{
+    color: white;
+    background: #7d7eb9;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.description_part .date{
+    color: #4b0083;
+    font-weight: bold;
+}
+
+.news_list{
+    width: 85%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.title_part a{
+    color: #2755b2;
+    text-decoration: none;
+}
+
+.title_part{
+    width: 50%;
+}
+
+.calendar{
+    width: 15%;
+}
+
+.single_news_block{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.single_news_block:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
 .chart_body{
-    padding-top: 250px;
+    padding-top: 230px;
 }
 
 body{
@@ -33,14 +112,11 @@ body{
 .footer .wrap{
     display: flex;
     justify-content: space-between;
-    /* background: rgba(59, 45, 64, 0.4); */
     color: #325180;
     font-style:oblique;
     font-size: 16px;
     font-weight: bold;
     align-items: center;
-    /* padding-left: 20px;
-    padding-right: 20px; */
     width: 100%;
 }
 
@@ -66,12 +142,10 @@ body{
     height: 50px;
    }
 
-   .left_foot_part{
+.left_foot_part{
        margin-top: 5px;
    }
    
-   
-
 .footer .wrap a,.footer .wrap a:visited{
     color: #d9ebf7;
     text-decoration: none;
@@ -89,9 +163,7 @@ img.wp-smiley, img.emoji {
 .menu ul{
     background-color: lavender;
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;   
 }
 
 .nazva h1 {
@@ -114,11 +186,11 @@ img.wp-smiley, img.emoji {
     font-weight: bold;
     text-align: center;
 }
+
 .contacts_part {
     float: right;
-    margin-left: 170px;
+    margin-left: 120px;
     margin-top: 30px;
-
 } 
 
 
@@ -126,9 +198,7 @@ img.wp-smiley, img.emoji {
     font-size: 16px;
     color: black;
     font-weight: bold;
-    font-style: system-ui; 
-    
-    
+    font-style: system-ui;    
 } 
 
 .fixed_part{
@@ -136,7 +206,6 @@ img.wp-smiley, img.emoji {
     width: 100%;
     background: white;
     z-index: 2;
-
     top: 0;
 }
 
@@ -145,7 +214,6 @@ img.wp-smiley, img.emoji {
     padding: 0;
     list-style-type: none;
     width: 100%;
-
     padding: 5px;
     margin-top: 10px;
 }
@@ -158,7 +226,6 @@ img.wp-smiley, img.emoji {
     display: inline-block;
     padding: 5px;
     background-color: lavender;
-    
     width: 100%;
 }
 
@@ -171,49 +238,43 @@ img.wp-smiley, img.emoji {
      display: block;
      background: url("../img/logo.jpg");
      width: 100%;
-     height: 650px;
+     height: 380px;
 }
-.god, .contacts{
+
+.contacts{
     display: block;
      background: url("../img/logo2.jpg");
      width: 100%;
      height: 100%;
      padding-top: 20px;
      padding-bottom: 40px;
-     /* padding-left: 40px;
-     padding-right: 40px; */
 }
 
 .doc{
     display: block;
      background: url("../img/logo3.jpg");
      width: 100%;
-     height: auto;
+     height: 330px;
 }
 
 .pidroz{
     display: block;
     background-color: lavender;
-     /* background: url("../img/logo3.jpg"); */
-     width: 100%;
-     /* height: 110px; */
 }
 
 .pidroz h3{
     color: #4e908f;
 }
 
-
-
-
 .main_content_body h3{
-    font-size: 30px;
+    font-size: 20px;
     color: #392E85;
     font-weight: bold;
-    padding: 40px 40px 0;
+    padding: 0 40px 0;
 }
+
 .main_content_body h4{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     font-weight: bold;    
 }
@@ -241,33 +302,29 @@ img.wp-smiley, img.emoji {
     text-align: left;  
 }
 
-/* .cont_adress hr{
-    height: 12px;
-border: 0;
-box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
-} */
-
-table {
-    width: 100%; 
+    table {
+    width: 100%
    }
 
-.pidroz caption{
+    .pidroz caption{
     font-weight: bold;
-    font-size: 17px;
-     
+    font-size: 17px;  
 }
 
    th{
     background-color: rgba(0, 102, 94, 0.4);
+    font-size: 14px;
    }
 
    .zagl{
     background-color: rgba(128, 128, 128, 0.4); 
     color: #1144AA;
+    font-size: 12px;
    }
 
    td{
     background-color: rgba(29, 118, 111, 0.2);
+    font-size: 13px;
    }
 
    .doc p{
@@ -275,36 +332,17 @@ table {
     font-weight: bold;
     margin-left: 10px; 
    }
-/* 
-   .doc hr{
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
-   } */
-
-   .god{
-    color: #1D766F;
-    font-weight: bold;
-   }
-
-
-   .god details{
-        padding-left: 20px;
-   }
-
-/* 
+ 
    .main hr{
     height: 12px;
     border: 0;
     box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
-   } */
-
-   .god h3{
-    color: #1144AA;
-   }
+   } 
 
    
+
    
+
    
 
 

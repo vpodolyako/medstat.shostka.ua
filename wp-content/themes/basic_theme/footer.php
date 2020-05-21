@@ -5,7 +5,7 @@ global $options_fields;
 <footer class="footer">
     <div class="wrap">
         <div class="left_foot_part">
-            Develop by V.PODOLYAKO
+            CREATED BY V.PODOLYAKO
         </div>
 
         <div class="right_foot_part">
