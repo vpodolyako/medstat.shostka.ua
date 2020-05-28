@@ -10,9 +10,26 @@
     margin-top: 230px;
 }
 
+.wp-block-image img {
+    width: 100%;
+}
+
 .news_body{
     display: flex;
     width: 90%;
+}
+
+.doc summary{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    padding: 20px 20px 0px 40px;
+}
+
+.doc .file{
+    display: flex;
+    align-items: center;
 }
 
 .post_title {
@@ -254,7 +271,19 @@ img.wp-smiley, img.emoji {
     display: block;
      background: url("../img/logo3.jpg");
      width: 100%;
-     height: 330px;
+}
+
+.doc h3{
+    margin: 0;
+    
+}
+
+.doc .file h3{
+    padding: 10px 10px 10px 40px;
+}
+
+.doc .file a{
+    color: #1144aa;
 }
 
 .pidroz{

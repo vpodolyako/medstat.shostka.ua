@@ -26,6 +26,7 @@ get_header();
 
 	$blanks = get_posts( array(
 		'order'       => 'DESC',
+		'numberposts' => -1,
 		'post_type'   => 'blanks',
 	));
 
