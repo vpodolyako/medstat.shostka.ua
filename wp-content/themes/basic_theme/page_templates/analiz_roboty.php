@@ -63,7 +63,7 @@ get_header();
 <main class="main">
 	<div class="pidroz">
 		<table border="1", cellpadding="5", cellspacing="5">
-		<hr><caption><h3>ФОРМА №12. ЗВІТ ПРО КІЛЬКІСТЬ ЗАХВОРЮВАНЬ</h3></caption><hr>
+		<caption><h3>ФОРМА №12. ЗВІТ ПРО КІЛЬКІСТЬ ЗАХВОРЮВАНЬ</h3></caption><hr>
 			<tr>
 				<th class=zagl>НАЙМЕНУВАННЯ</th>
 				<th class=zagl>ЗАРЕЄСТРОВАНО ЗАХВОРЮВАНЬ ВСЬОГО</th>
