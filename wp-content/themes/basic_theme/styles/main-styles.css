@@ -261,14 +261,14 @@ img.wp-smiley, img.emoji {
     justify-content: space-around;
 }
 
-.main_content_body, .doc {
+.main_content_body{
      display: block;
      background: url("../img/logo.jpg");
      width: 100%;
      height: 380px;
 }
 
-.contacts{
+.contacts {
     display: block;
      background: url("../img/logo2.jpg");
      width: 100%;
@@ -283,7 +283,7 @@ img.wp-smiley, img.emoji {
 
 .doc{
     display: block;
-    background: url("../img/logo3.jpg");
+    background-image: url("../img/logo3.jpg");
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
@@ -301,6 +301,10 @@ img.wp-smiley, img.emoji {
 
 .doc .file a{
     color: #1144aa;
+}
+
+.doc .file a img{
+    width: 25px;
 }
 
 .pidroz{

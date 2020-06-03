@@ -10,7 +10,7 @@ get_header();
       <div class="pidroz">
 	  
 	  <table border="1", cellpadding="10", cellspacing="10">
-     <hr><caption><h3>СТРУКТУРНІ ПІДРОЗДІЛИ ЦЕНТРУ ПМСД :</h3></caption><hr>
+     <caption><h3>СТРУКТУРНІ ПІДРОЗДІЛИ ЦЕНТРУ ПМСД :</h3></caption><hr>
    <tr>
    <th class=zagl>НАЗВА</th>
 	<th class=zagl>АДРЕСА</th>
