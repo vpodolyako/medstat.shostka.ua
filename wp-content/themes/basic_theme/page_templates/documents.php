@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<main class="main">	
+<main class="main docs_page">	
 
 <?php
 	$documents_fields = get_fields();

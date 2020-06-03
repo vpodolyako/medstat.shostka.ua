@@ -27,33 +27,35 @@ get_header();
 		</div>
 
 		<div class="calendar">
-			<div class="icalendar">
-				<div class="icalendar__month">
-					<div class="icalendar__prev" onclick="moveDate('prev')">
-					<span>&#10094</span>
-					</div>
-					<div class="icalendar__current-date">
-					<h2 id="icalendarMonth"></h2>
-					<div>
-						<div id="icalendarDateStr"></div>
-					</div>
-					</div>
-					<div class="icalendar__next" onclick="moveDate('next')">
-					<span>&#10095</span>
-					</div>
-				</div>
-				<div class="icalendar__week-days">
-					<!-- Localize names of the days of the week -->
-					<div>Sun</div>
-					<div>Mon</div>
-					<div>Tue</div>
-					<div>Wed</div>
-					<div>Thu</div>
-					<div>Fri</div>
-					<div>Sat</div>
-				</div>
-				<div class="icalendar__days"></div>
-			</div>
+			<div class="container-calendar">
+
+	<h3 id="monthAndYear"></h3>
+
+	<table class="table-calendar" id="calendar" data-lang="en">
+	<thead id="thead-month"></thead>
+	<tbody id="calendar-body"></tbody>
+	</table>
+
+	<div class="footer-container-calendar">
+
+	<select id="month" onchange="jump()">
+		<option value=0>Jan</option>
+		<option value=1>Feb</option>
+		<option value=2>Mar</option>
+		<option value=3>Apr</option>
+		<option value=4>May</option>
+		<option value=5>Jun</option>
+		<option value=6>Jul</option>
+		<option value=7>Aug</option>
+		<option value=8>Sep</option>
+		<option value=9>Oct</option>
+		<option value=10>Nov</option>
+		<option value=11>Dec</option>
+	</select>
+	<select id="year" onchange="jump()"></select>
+	</div>
+
+	</div>
 		</div>
 	</div>
 
@@ -61,7 +63,7 @@ get_header();
 
 </main>
 
-
+<script src="<?php echo get_template_directory_uri() . '/plugins/calendar/calendar.js' ?>"></script>
 
 <?php
 get_footer();
