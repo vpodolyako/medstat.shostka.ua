@@ -17,7 +17,7 @@ html {
 }
 
 .container-calendar {
-  background: #ffffff;
+  background: rgba(125, 126, 185, 0.4);;
   padding: 15px;
   max-width: 475px;
   margin: 0 auto;
@@ -58,7 +58,7 @@ html {
 
 /* sunday */
 .date-picker:nth-child(1) {
-color: red;
+color: rgb(34, 150, 158);
 }
 
 /* friday */
